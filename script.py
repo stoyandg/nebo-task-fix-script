@@ -1,8 +1,9 @@
 import os
 import glob
+import sys
 
-os.chdir("/Users/stoyangeorgiev/Downloads/Projects/nebo-task-fix-script/test-folder")
-for file in glob.glob("*.json"):
+os.chdir((sys.argv[1]))
+for file in glob.glob((sys.argv[2])):
     file_name = os.path.splitext(file)[0]
     extension = os.path.splitext(file)[1]
     new_file_name = file_name[:-6] + extension
