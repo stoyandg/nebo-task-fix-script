@@ -1,7 +1,7 @@
 import os
 import glob
 
-os.chdir("/Users/mikeherman/repos/bugs/se-platform/se/core/permissions")
+os.chdir("/Users/stoyangeorgiev/Downloads/Projects/nebo-task-fix-script/test-folder")
 for file in glob.glob("*.json"):
     file_name = os.path.splitext(file)[0]
     extension = os.path.splitext(file)[1]
